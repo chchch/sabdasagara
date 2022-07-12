@@ -8,7 +8,7 @@ copyright:           "2021 Author name here"
 
 extra-source-files:
 - README.md
-- ChangeLog.md
+#- ChangeLog.md
 
 # Metadata used when publishing your package
 # synopsis:            Short description of your package
@@ -49,13 +49,13 @@ executables:
     dependencies:
     - sabdasagara
 
-tests:
-  sabdasagara-test:
-    main:                Spec.hs
-    source-dirs:         test
-    ghc-options:
-    - -threaded
-    - -rtsopts
-    - -with-rtsopts=-N
-    dependencies:
-    - sabdasagara
+#tests:
+#  sabdasagara-test:
+#    main:                Spec.hs
+#    source-dirs:         test
+#    ghc-options:
+#    - -threaded
+#    - -rtsopts
+#    - -with-rtsopts=-N
+#    dependencies:
+#    - sabdasagara
