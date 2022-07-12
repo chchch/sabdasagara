@@ -31,7 +31,7 @@ dependencies:
 - text
 - parsec
 - fasta
-- regex-pcre
+- regex-pcre-builtin
 - hxt-unicode
 - Unique
 
