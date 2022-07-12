@@ -1,4 +1,4 @@
-name: helayo build & test
+name: sabdasagara build
 
 on:
   push:
