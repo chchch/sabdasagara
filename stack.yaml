@@ -44,7 +44,6 @@ packages:
 # flags: {}
 extra-deps:
 - align-0.1.1.2
-#- fasta-0.10.4.2
 - fasta-0.10.4.2
 - pipes-text-1.0.0
 - MissingH-1.4.3.0
@@ -52,12 +51,17 @@ extra-deps:
 #- pipes-text-0.0.2.5
 #- pipes-safe-2.3.2
 - Unique-0.4.7.9
+- regex-posix-clib-2.7
+
+flags:
+  regex-posix:
+    _regex-posix-clib: true
 
 # Extra package databases containing global packages
 # extra-package-dbs: []
 
 # Control whether we use the GHC we find on the path
-# system-ghc: true
+ system-ghc: true
 #
 # Require a specific version of stack, using version ranges
 # require-stack-version: -any # Default
