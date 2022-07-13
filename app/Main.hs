@@ -49,7 +49,7 @@ options =
     Option ['p']  ["1gram-penalty"]  (ReqArg (\o opts -> opts {optP1Gram = read o::Double}) "-1") "1gram fuzzy match minimum score",
     Option ['q']  ["ngram-penalty"]  (ReqArg (\o opts -> opts {optPNGram = read o::Double}) "-1") "ngram fuzzy match minimum score",
     Option ['1']  ["singletons"] (NoArg (\opts -> opts {optSingletons = True})) "include ngrams that only occur in one text",
-    Option ['o'] ["format"] (ReqArg (\o opts -> opts {optFormat = read o::String}) "nexus") "output format (nexus or csv)"
+    Option ['o'] ["format"] (ReqArg (\o opts -> opts {optFormat = o}) "nexus") "output format (nexus or csv)"
   ]
 
 

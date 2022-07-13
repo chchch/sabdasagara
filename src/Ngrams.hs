@@ -142,10 +142,10 @@ printGrams :: MM.Map String [String] -> [String]
 printGrams gs = map printGram (MM.toList gs)
 
 printGram :: (String,[String]) -> String
-printGram (sig,grams) = sig ++ ',' : (intercalate "," $ map go grams)
+printGram (sig,grams) = sig ++ ',' : (intercalate "," $ map go $ reverse grams)
     where
     go :: String -> String
-    go x = '"':(transliterateString slp1' iast x) ++ "\""
+    go x = quothy $ transliterateString slp1' iast x
 
 quoth :: String -> String
 quoth s = '\'':s ++ "'"
